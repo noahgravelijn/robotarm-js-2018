@@ -6,14 +6,18 @@
             // Robotarm bibliotheek inladen
             var canvas = document.getElementById("canvas");
             var robotArm = new RobotArm(canvas);
-            robotArm.speed = 700
+            robotArm.speed = 600
             
             // Het level inladen
             robotArm.loadLevel("exercise 11");
             
             // Jou instructies volgen hier
-            for (var i = 0; i < 9; i++) {
+            for (var p = 0; p < 10; p++) {
                 robotArm.moveRight();
+                
+            }
+            for (var i = 0; i < 15; i++) {
+                robotArm.moveLeft();
                 robotArm.grab();
                 robotArm.scan();
 
